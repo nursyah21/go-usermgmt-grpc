@@ -26,3 +26,10 @@ go mod tidy
 ```
 
 to download module
+
+for testing run server and client
+
+```
+go run server/usermgmt_server.go
+go run client/usermgmt_client.go
+```
