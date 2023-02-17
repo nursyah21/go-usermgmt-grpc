@@ -1,3 +1,3 @@
-module example.com/go-usermgmt-grpc
+module github.com/nursyah21/go-usermgmt-grpc
 
 go 1.18

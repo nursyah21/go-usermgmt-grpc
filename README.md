@@ -4,12 +4,17 @@
 
 Prequisites: <https://grpc.io/docs/languages/go/quickstart/#prerequisites>
 
+other tutorials:
+
+- <https://protobuf.dev/getting-started/>
+- <https://github.com/grpc/grpc-go/tree/master/examples>
+
 Build a Unary Service Method
 
 ![img](/assets/unary-services.png)
 
-generated protobug
+generated protobuf
 
 ```bash
-protoc --go_out=usrmgmt --go-grpc_out=usrmgmt usrmgmt/usrmgmt.proto
+protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative usrmgmt/usrmgmt.proto
 ```

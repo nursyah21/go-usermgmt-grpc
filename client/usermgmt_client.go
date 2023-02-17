@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	pb "example.com/go-usermgmt-grpc/usermgmt"
-	"google.golang.org/grpc"
+	pb "github.com/nursyah21/go-usermgmt-grpc/usermgmt"
+	 "google.golang.org/grpc"
 )
 
 const (
