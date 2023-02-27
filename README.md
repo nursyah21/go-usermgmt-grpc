@@ -16,7 +16,7 @@ Build a Unary Service Method
 generated protobuf
 
 ```bash
-protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative usrmgmt/usrmgmt.proto
+protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative usermgmt/usrmgmt.proto
 ```
 
 create repository in github to place code and run
@@ -29,7 +29,7 @@ to download module
 
 for testing run server and client
 
-```
+```bash
 go run server/usermgmt_server.go
 go run client/usermgmt_client.go
 ```

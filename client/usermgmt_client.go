@@ -2,11 +2,12 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"time"
 
 	pb "github.com/nursyah21/go-usermgmt-grpc/usermgmt"
-	 "google.golang.org/grpc"
+	"google.golang.org/grpc"
 )
 
 const (
@@ -38,4 +39,12 @@ Name: %s
 Age: %d
 ID: %d`, r.GetName(), r.GetAge(), r.GetId())
 	}
+
+	params := &pb.GetUsersParams{}
+	r, err := c.GetUsers(ctx, params)
+	if err != nil {
+		log.Fatalf("Could not retrieve users: %v", err)
+	}
+	log.Print("\nUSER LIST: \n")
+	fmt.Printf("r.GetUsers(): %v\n", r.GetUsers())
 }
